@@ -2,11 +2,6 @@ namespace DesignPatterns.BuilderPattern
 {
     public class Student
     {
-        private static IBuilder builder;
-        public Student()
-        {
-            builder = new StudentBuilder();
-        }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
@@ -16,7 +11,7 @@ namespace DesignPatterns.BuilderPattern
 
         public static IBuilder getBuilder()
         {
-            return builder;
+            return  new StudentBuilder();
         }
 
         public void printInfo()

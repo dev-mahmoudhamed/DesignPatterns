@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.DecoratorPattern;
+using DesignPatterns.BuilderPattern;
 
 namespace DesignPatterns
 {
@@ -6,6 +7,8 @@ namespace DesignPatterns
     {
         public static void Main(String[] args)
         {
+            BuilderApp app = new();
+            app.Run();
         }
     }
 }
