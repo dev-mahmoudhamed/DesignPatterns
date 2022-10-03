@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.DecoratorPattern;
 using DesignPatterns.BuilderPattern;
+using DesignPatterns.BridgePattern;
 
 namespace DesignPatterns
 {
@@ -7,8 +8,7 @@ namespace DesignPatterns
     {
         public static void Main(String[] args)
         {
-            BuilderApp app = new();
-            app.Run();
+            BridgeApp.Run();
         }
     }
 }
